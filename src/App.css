@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.questionsCard {
+  width: 725px;
+  /* min-width: 80%; */
+  color: #222;
+  background-color: #fff;
+  border-radius: 10px;
+  display: grid;
+  /* 
+  grid-template-columns: auto;
+  justify-content: space-between;
+  align-items: center; */
+}
+.title {
+  text-align: left;
+  margin-left: 25px;
+  font-weight: bold;
+  /* width: 15%; */
+  /* background-color: cadetblue; */
+}

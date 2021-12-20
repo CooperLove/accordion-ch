@@ -1,22 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import data from "./Data";
+import SingleQuestion from "./components/SingleQuestion";
 
 function App() {
+  const [questions, setQuestions] = useState(data);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="questionsCard">
+          <p className="title">Questions And Answers About Login</p>
+          <section>
+            {questions.map((question) => {
+              return <SingleQuestion key={question.id} {...question} />;
+            })}
+          </section>
+        </div>
       </header>
     </div>
   );

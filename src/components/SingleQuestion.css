@@ -1,0 +1,44 @@
+.questionCard {
+  border: 1.5px solid;
+  text-align: left;
+  min-width: 45%;
+  /* width: 65%; */
+  max-width: 75%;
+  /* display: grid; */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  padding-left: 25px;
+  padding-right: 15px;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+.info {
+  text-align: justify;
+  margin-right: 25px;
+  margin-top: auto;
+}
+
+.header {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  height: 40px;
+  width: 40px;
+  /* background-color: tomato; */
+  background-color: #eae6eb;
+  border-color: transparent;
+  border-radius: 50%;
+  color: #b4345c;
+  cursor: pointer;
+}
+.btnIcon {
+  width: 100%;
+  height: 100%;
+  /* color: #fff; */
+  /* background-color: beige; */
+}
